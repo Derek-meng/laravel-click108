@@ -35,7 +35,7 @@ class ConstellationsDetectorService
         $dto = collect($this->client->day());
         $result = [];
         $dto->each(function (TwelveConstellationsDTO $dto) use (&$result) {
-            $day = Carbon::now()->setDay($dto->day())->setMonth($dto->month());
+            $day = Carbon::now()->day($dto->day())->month($dto->month());
             $result[] = $this->repo->createOrUpdate([
                 'name' => $dto->name(),
                 'day'  => $day,

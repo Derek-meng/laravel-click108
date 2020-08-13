@@ -1,6 +1,7 @@
 {
     "name": "derek/laravel-click108",
     "description": "click108 library for laravel",
+    "version": "1.0.0",
     "type": "library",
     "keywords": ["click108", "laravel"],
     "license": "MIT",
@@ -39,6 +40,7 @@
         }
     },
     "minimum-stability": "stable",
+    "prefer-stable": true,
     "config": {
     "sort-packages": true,
     "optimize-autoloader": true

@@ -2,8 +2,8 @@
 
 namespace Jubilee\Click108\Console\Commands;
 
+use Illuminate\Console\Command;
 use Jubilee\Click108\Services\ConstellationsDetectorService;
-use Symfony\Component\Console\Command\Command;
 
 class DetectorConstellations extends Command
 {
@@ -18,7 +18,7 @@ class DetectorConstellations extends Command
      *
      * @var string
      */
-    protected $description = 'This is excavate twelve constellations at everyday';
+    protected $description = 'This is excavate twelve constellations at current day';
 
     /**
      * Create a new command instance.

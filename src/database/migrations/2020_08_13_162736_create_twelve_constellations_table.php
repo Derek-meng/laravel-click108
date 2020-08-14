@@ -1,7 +1,5 @@
 <?php
 
-namespace Jubilee\Click108\Migrations;
-
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -26,7 +24,7 @@ class CreateTwelveConstellationsTable extends Migration
             $table->text('career_content')->comment('事業運勢說明');
             $table->unsignedInteger('fortune_score')->comment('財運運勢說明');
             $table->text('fortune_content')->comment('財運運勢說明');
-            $table->dateTime('day')->comment('當天日期');
+            $table->date('day')->comment('當天日期');
             $table->unique(['name', 'day']);
             $table->timestamps();
         });

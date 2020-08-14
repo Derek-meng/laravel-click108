@@ -1,7 +1,7 @@
 {
     "name": "derek/laravel-click108",
     "description": "click108 library for laravel",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "keywords": ["click108", "laravel"],
     "license": "MIT",
@@ -24,7 +24,12 @@
     "require": {
         "php": ">=7.2",
         "derek/click108": "^1.0",
+        "fzaninotto/faker": "^1.9",
         "laravel/framework": "^5.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^5.0",
+        "phpunit/phpunit": "~6.0"
     },
     "repositories": [
         {

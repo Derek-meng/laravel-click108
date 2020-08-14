@@ -2,11 +2,13 @@
 
 namespace Jubilee\Click108\Util;
 
+use Jubilee\Click108\Constants\MonologLevelLabelConstants;
+
 class LaravelLoggerUtil
 {
     /**
      * @param \Throwable $e
-     * @param string $level ref \Modules\Base\Constants\MonologLevelLabelConstants const to know all level,
+     * @param string $level ref Jubilee\Click108\Constants\MonologLevelLabelConstants const to know all level,
      * default is debug level.
      * @see MonologLevelLabelConstants
      */
@@ -23,7 +25,7 @@ class LaravelLoggerUtil
 
     /**
      * @param string $message
-     * @param string $level ref \Modules\Base\Constants\MonologLevelLabelConstants const to know all level
+     * @param string $level ref Jubilee\Click108\Constants\MonologLevelLabelConstants const to know all level
      * , default is debug level.
      */
     public static function loggerMessage(string $message, string $level = 'debug')

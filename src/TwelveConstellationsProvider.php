@@ -21,7 +21,7 @@ class TwelveConstellationsProvider extends ServiceProvider
         );
         $this->app->booted(function () {
             $schedule = $this->app->make(Schedule::class);
-            $schedule->command(DetectorConstellations::class)->everyMinute();
+            $schedule->command(DetectorConstellations::class)->daily();
         });
         $this->loadRoutesFrom(__DIR__ . DIRECTORY_SEPARATOR . 'routes.php');
         $this->loadViewsFrom(__DIR__ . DIRECTORY_SEPARATOR . 'resource' . DIRECTORY_SEPARATOR . 'view', 'test');
@@ -32,7 +32,7 @@ class TwelveConstellationsProvider extends ServiceProvider
                     base_path('database' . DIRECTORY_SEPARATOR . 'migrations' . DIRECTORY_SEPARATOR),
                 __DIR__ . DIRECTORY_SEPARATOR . 'resource' . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR =>
                     base_path('resources' . DIRECTORY_SEPARATOR . 'views'),
-                __DIR__ . DIRECTORY_SEPARATOR . 'database' . DIRECTORY_SEPARATOR . 'factories'                  =>
+                __DIR__ . DIRECTORY_SEPARATOR . 'database' . DIRECTORY_SEPARATOR . 'factories'                   =>
                     base_path('database' . DIRECTORY_SEPARATOR . 'factories' . DIRECTORY_SEPARATOR)
             ]
         );

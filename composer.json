@@ -1,53 +1,56 @@
 {
-    "name": "derek/laravel-click108",
-    "description": "click108 library for laravel",
-    "version": "1.0.1",
-    "type": "library",
-    "keywords": ["click108", "laravel"],
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Derekmeng",
-            "email": "a0985265734@gmail.com"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Jubilee\\Click108\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Jubilee\\Click108\\Tests\\": "tests/"
-        }
-    },
-    "require": {
-        "php": ">=7.2",
-        "derek/click108": "^1.0",
-        "fzaninotto/faker": "^1.9",
-        "laravel/framework": "^5.0"
-    },
-    "require-dev": {
-        "laravel/framework": "^5.0",
-        "phpunit/phpunit": "~6.0"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@github.com:Derek-meng/click108.git"
-        }
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Jubilee\\Click108\\TwelveConstellationsProvider"
-            ]
-        }
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "config": {
+  "name": "derek/laravel-click108",
+  "description": "click108 library for laravel",
+  "version": "1.0.2",
+  "type": "library",
+  "keywords": [
+    "click108",
+    "laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Derekmeng",
+      "email": "a0985265734@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jubilee\\Click108\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jubilee\\Click108\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": ">=7.2",
+    "derek/click108": "^1.0",
+    "fzaninotto/faker": "^1.9",
+    "laravel/framework": "^5.0"
+  },
+  "require-dev": {
+    "laravel/framework": "^5.0",
+    "phpunit/phpunit": "~6.0"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@github.com:Derek-meng/click108.git"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Jubilee\\Click108\\TwelveConstellationsProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
     "sort-packages": true,
     "optimize-autoloader": true
-    }
+  }
 }
